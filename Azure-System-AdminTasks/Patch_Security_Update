@@ -1,0 +1,4 @@
+# powershell script to install updates on a windows virtualMachines
+Install-Module -Name PSWindowsUpdate -Force -SkipPublisherCheck
+Import-Module PSWindowsUpdate
+Get-WindowsUpdate -AcceptAll

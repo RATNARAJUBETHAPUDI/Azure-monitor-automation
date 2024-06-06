@@ -1,0 +1,5 @@
+#PowerShell script to test network connectivity to a remote server
+Test-connection -ComputerName www.Roboshop.com -Count 4
+
+# Bash script to test network connectivity
+ping -c www.Roboshop.com

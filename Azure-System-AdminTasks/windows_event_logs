@@ -1,0 +1,2 @@
+#powershell script to filter and display critical events from the system log
+Get-Eventlog -LogName System -EntryType  Error, warning -Newest 10

@@ -1,0 +1,2 @@
+#Bash script to filter and display critical messages from syslog
+grep -i "crit" /var/log/syslog | tail -n 10

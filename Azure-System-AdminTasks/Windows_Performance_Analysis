@@ -1,0 +1,3 @@
+# powershell script to get CPU and memory usage
+Get-WmiObject -class win32_Processor | Select-Object -Property Name, LoadPercentage
+Get-wmiObject -class win32_OperatingSystem |  Select-Object -Property  TotalVisibleMemorySize , FreePhysicalMemory

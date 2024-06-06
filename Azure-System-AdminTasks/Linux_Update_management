@@ -1,0 +1,2 @@
+#bash script to update and upgrade a linux system
+sudo apt-get update && sudo apt-get upgrade -y
