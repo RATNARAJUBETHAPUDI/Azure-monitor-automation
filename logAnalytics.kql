@@ -1,0 +1,4 @@
+// KQL query to find the top 5 processes consuming the most CPU Perf
+| Where CounterName == "% Processor Time"
+| summarize avg(CounterValue) by InstanceName
+| top 5 by avg_CounterValue desc 
